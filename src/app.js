@@ -1,10 +1,11 @@
 import React from 'react'
+import { AppRouter } from './router/AppRouter'
 
 
 export const app = () => {
     return (
       <>
-        <h1>Hi there!! this is react</h1>
+        <AppRouter/>
       </>
     )
 }
