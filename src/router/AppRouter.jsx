@@ -5,8 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Login } from '../Auth/Login';
-import { SingUp } from '../Auth/SingUp';
+import { Login } from '../components/Auth/Login';
+import { SingUp } from '../components/Auth/SingUp';
 
 export const AppRouter = () => {
     return (
