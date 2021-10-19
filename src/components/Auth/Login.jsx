@@ -7,12 +7,11 @@ export const Login = () => {
 
     const logiInfo = () => {
         window.Outseta && Outseta.on('accessToken.set', function (user) {
-            return ({
-                name: user.name,
-            })
+            return user
         });
     }   
-   logiInfo()
+   const userInfo = logiInfo()
+   console.log(userInfo)
 
     return (
         <div className="ww-comp-button">
