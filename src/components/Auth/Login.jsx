@@ -7,7 +7,9 @@ export const Login = () => {
 
     const logiInfo = () => {
         window.Outseta && Outseta.on('accessToken.set', function (user) {
-            console.log('accessToken.set', user.name)
+            return ({
+                name: user.name,
+            })
         });
     }   
    logiInfo()
