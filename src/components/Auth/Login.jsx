@@ -8,7 +8,7 @@ export const Login = () => {
     useEffect(() => {
     const logiInfo = () => {
         window.Outseta && Outseta.on('accessToken.set', function (user) {
-        console.log('accessToken.set', user);
+        console.log([user.name, user.email, user.nameid]);
         });
     }   
     logiInfo()
