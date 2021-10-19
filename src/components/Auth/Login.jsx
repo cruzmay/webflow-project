@@ -5,15 +5,18 @@ import { useForm } from '../../hooks/useForms'
 
 export const Login = () => {
 
-    useEffect(() => {
     const logiInfo = () => {
         window.Outseta && Outseta.on('accessToken.set', function (user) {
-        console.log([user.name, user.email, user.nameid]);
+        return {
+            name: user.name,
+            email: user.email,
+            uid: user.nameid
+        }
         });
     }   
-    logiInfo()
-    }, [])
-
+    const loginData = logiInfo()
+    console.log(loginData)
+    
     return (
         <div className="ww-comp-button">
             <h3 className="ww-type-paragraph color-secondary typebold primarybutton">Paragraph</h3>
