@@ -1,8 +1,3 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useForm } from '../../hooks/useForms'
-
-
 export const Login = () => {
 
     const logiInfo = () => {
@@ -10,8 +5,9 @@ export const Login = () => {
             return user
         });
     }   
-logiInfo()
+const dataLogin = logiInfo()
 
+    console.log(dataLogin)
 
     return (
         <div className="ww-comp-button">
