@@ -10,8 +10,8 @@ export const Login = () => {
             return user
         });
     }   
-   const userInfo = logiInfo()
-   console.log(userInfo)
+logiInfo()
+
 
     return (
         <div className="ww-comp-button">
