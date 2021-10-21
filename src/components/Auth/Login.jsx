@@ -2,14 +2,11 @@ import React from 'react'
 
 export const Login = () => {
 
-    const logiInfo = () => {
-        Outseta.on('accessToken.set', function (user) {
+
+const outsetaLogin = Outseta.on('accessToken.set', function (user) {
             return user
         });
-    }   
-const dataLogin = logiInfo()
-
-    console.log(dataLogin)
+console.log(outsetaLogin)
 
     return (
         <div className="ww-comp-button">
