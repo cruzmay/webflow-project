@@ -1,8 +1,11 @@
+import React from 'react'
+
 export const Login = () => {
 
     const logiInfo = () => {
         window.Outseta && Outseta.on('accessToken.set', function (user) {
-            return user
+            const dataUser = user
+            return dataUser
         });
     }   
 const dataLogin = logiInfo()
